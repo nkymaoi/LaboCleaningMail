@@ -63,9 +63,22 @@ windowsの定期実行機能にセットすることで、自動でメールを�
 ※これは慣れてないと、ちょっと難しめ
 
 #### 5.1 Gmailアドレスなどの設定
-`envs.txt`内に環境変数を追加する
+`envs.txt`内に環境変数を追加する<br>
+AP_PASSWORDはgoogleのアプリパスワード
+
 ~~~bash
 AP_PASSWORD=aaaaaaaaaaaaaaaaaa
 MY_GMAIL_ADDRESS=takashi@dc.tohoku.ac.jp
 TO_GMAIL_ADDRESS=yamada@dc.tohoku.ac.jp
 ~~~
+
+#### 5.2 タスクスケジューラへの登録
+1. Windows + x　を押して「コンピュータの管理」をひらく
+2. システムツール>>タスクスケジューラ>>タスクスケジューラライブラリに適当な名前の新しいフォルダを作成
+3. 作成したフォルダ内で新しいタスクの作成
+![タスクの名前等を設定](./uml/howto1.png)
+![トリガーを設定](./uml/howto2.png)
+![実行するプログラムを設定](./uml/howto3.png)
+![起動条件を設定](./uml/howto4.png)
+![各種設定](./uml/howto5.png)
+4. 登録したタスクは右クリックで即座に実行できるので試してみても良い
