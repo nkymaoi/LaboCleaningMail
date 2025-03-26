@@ -64,7 +64,11 @@ windowsの定期実行機能にセットすることで、自動でメールを�
 
 #### 5.1 Gmailアドレスなどの設定
 `envs.txt`内に環境変数を追加する<br>
-AP_PASSWORDはgoogleのアプリパスワード
+AP_PASSWORDはgoogleのアプリパスワード<br>
+アプリパスワードは以下で設定<br>
+[アプリ パスワードでログインする](https://support.google.com/accounts/answer/185833?hl=ja)
+
+2段階認証設定が必要なのでする
 
 ~~~bash
 AP_PASSWORD=aaaaaaaaaaaaaaaaaa
